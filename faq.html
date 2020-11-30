@@ -94,51 +94,80 @@
     
     <!--Content Section Start-->
 
-    <section class="container">
-        <p class="text-center m-2">Faça parte da maior empresa de envidraçamento do Brasil, seja um associado da ShoppinGlass</p>
-        <img src="./img/assosi.png" class="rounded mx-auto d-block">
-        <h6 class="m-2">Indique clientes e ganhe dinheiro</h6>
-        <p class="text-justify">
-            Indique uma pessoa que queira comprar qualquer dos nossos produtos e ganhe uma comissão quando ele comprar do ShoppinGlass.
-        </p>
+    
+    <div id="accordion" class="accordion-area container my-5">
+        <div class="panel">
+            <div class="panel-header" id="headingOne">
+                <button class="panel-link active" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Indique clientes e ganhe dinheiro</button>
+            </div>
+            <div id="collapse1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="panel-body">
+                    <p class="text-justify">
+                        Indique uma pessoa que queira instalar energia solar fotovoltaica para reduzir a conta de luz, e ganhe uma comissão quando ela comprar do ShoppinGlass!
+                        Exemplo: se indicar um cliente e ele comprar do ShoppinGlass um valor de R$ 15.000,00, você ganha de R$ 240,00 até R$ 450,00!*
+                    </p>
+                </div>
+            </div>
+        </div>
 
-        <button type="button" class="btn btn-danger m-4 btn-lg btn-block">Clique aqui para ser um Associado</button>
+        <h3 class="text-center my-5"> F.A.Q - Perguntas mais frequentes</h3>
 
-        <hr>
-
-        <h6>Ganhe dinheiro com Envidraçamento</h6>
-        <p>
-            1 - Clique no botão acima;</br>
-            2 - Responda o formulário e receba seu código;</br>
-            3 - Agora com esse código toda indicação realizada por esse código assim que o venda for concluída será adicionado a sua comissão.</br>
-            4 - Agora você pode retirar o valor da sua comissão!
-        </p>
-        
-        <hr>
-
-        <h6>Receba o dinheiro direto na sua conta</h6>
-        <p>
-            Com o sistema de assosicados da ShoppinGlass você assim que quiser pode retirar o valor que conseguiu com as indicações de vendas concluídas.
-
-        </p>
-
-        <hr>
-
-        <h6>Ainda está com dúvidas ?</h6>
-            <p>Estamos prontos para te ajudar!<br>
-            Entre em contato com a nossa equipe:<br>
-            <b>Whatsapp:</b><br>
-            <b>E-mail:</b><br>
-            <b>Telefone:</b><br>
-            Horario de atendimento de segunda a sexta das 8:00 às 18:00<br>
-            </p>
-
-        </ol>
-
-        <img src="./img/assosifaq.png" class="rounded  mx-auto d-block">
-        <button type="button" class="btn btn-danger m-4 btn-lg btn-block" onclick="window.location.href='./faq.html'"">Clique para tirar mais dúvidas</button>
-
-    </section>
+        <div class="panel">
+            <div class="panel-header" id="headingTwo">
+                <button class="panel-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">Como funciona ? </button>
+            </div>
+            <div id="collapse2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="panel-body">
+                    <p>
+                        O sistema de associados funciona a partir de token, que voce passa para o comprador em potencial, que utiliza ele na hora da compra, dessa forma quando a compra
+                        for realizada, entraremos em contato com voce para fazer o deposito do valor da sua indicacao.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-header" id="headingThree">
+                <button class="panel-link" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">Como posso fazer as indicacoes ?</button>
+            </div>
+            <div id="collapse3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="panel-body">
+                    <p class="text-justify">
+                        As indicacoes atualmente sao feitas a partir de um token, so seu, ele identifica voce para o ShoppinGlass, de forma que sabemos quem compra usando seu token.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-header" id="headingThree">
+                <button class="panel-link" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">Receba o dinheiro direto na sua conta</button>
+            </div>
+            <div id="collapse3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="panel-body">
+                    <p class="text-justify">
+                        Pelo site, você acompanha o processo de compra dos clientes que você indicou e quanto pode ganhar com todas as indicações!
+                        Os ganhos com as comissões podem ser sacados  através do app direto para a sua conta.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-header" id="headingThree">
+                <button class="panel-link" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">Preciso saber vender ?</button>
+            </div>
+            <div id="collapse3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="panel-body">
+                    <p class="text-justify">
+                        Não. Você precisará apenas fazer a indicação do cliente interessado dentro do site ShoppinGlass Afiliados. 
+                        Todos os esclarecimentos de dúvidas técnicas, negociação, agendamento de visita técnica, instalação e solução de 
+                        pagamentos serão de responsabilidade do time de vendas do ShoppinGlass.
+                        Mas é claro que quanto mais conhecimento você tiver sobre energia solar, melhor será a apresentação do assunto para os seus clientes, 
+                        maiores serão as chances dos clientes indicados comprarem kits de energia solar e maior será o seu percentual de comissão 
+                        (conforme tabela de categoria dos afiliados).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--Content Section End-->
     
