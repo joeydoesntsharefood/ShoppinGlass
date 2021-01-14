@@ -31,7 +31,7 @@
 					<div class="col-lg-2 text-center text-lg-left">
 						<!-- logo -->
 						<a href="../index.html" class="site-logo">
-							<img src="./img/logo.png" alt="">
+							<img src="../ShoppinGlass/img/logo.png" alt="">
 						</a>
 					</div>
 					<div class="col-xl-6 col-lg-5">
@@ -88,53 +88,80 @@
     
     <!--Content Section Start-->
 
-    <section class="container">
-        <p class="text-center m-2">Faça parte da maior empresa de envidraçamento do Brasil, seja um associado da ShoppinGlass</p>
-        <img src="./img/assosi.png" class="rounded mx-auto d-block">
-        <h6 class="m-2">Indique clientes e ganhe dinheiro</h6>
-        <p class="text-justify">
-            Indique uma pessoa que queira comprar qualquer dos nossos produtos e ganhe uma comissão quando ele comprar do ShoppinGlass.
-        </p>
+    <!--Form-->
 
-        <button type="button" class="btn btn-danger m-4 btn-lg btn-block" onclick="window.location.href='./q.html'">Clique aqui para ser um Associado</button>
+	<div class="space_Contact" id="contact"></div>  
+	<div class="container-fluid col-lg-7 mb-5">
+		<h3 class="text-center text-primary">Entre em contato conosco</h3>
+		<p class="text-small mt-2 font-weight-light text-break text-justify"> Qualquer duvída ou interesse em nossos produtos ? 
+			Entre em contato conosco noss equipe está sempre preparada para te responder ajudando você durante 
+			toda as etapas para embelezar ainda mais sua varanda!
+		</p>
+	</div>
 
-        <hr>
+	<div class="container mb-3">
+		<form id="contact-form" method="post" action="/assets/php/contact.php" role="form">
 
-        <h6>Ganhe dinheiro com Envidraçamento</h6>
-        <p>
-            1 - Clique no botão acima;</br>
-            2 - Responda o formulário e receba seu código;</br>
-            3 - Agora com esse código toda indicação realizada por esse código assim que o venda for concluída será adicionado a sua comissão.</br>
-            4 - Agora você pode retirar o valor da sua comissão!
-        </p>
-        
-        <hr>
+			<div class="messages"></div>
 
-        <h6>Receba o dinheiro direto na sua conta</h6>
-        <p>
-            Com o sistema de assosicados da ShoppinGlass você assim que quiser pode retirar o valor que conseguiu com as indicações de vendas concluídas.
+			<div class="controls">
 
-        </p>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="form_name">Nome Completo *</label>
+							<input id="form_name" type="text" name="name" class="form-control" placeholder="Por favor insira seu nome *" required="required" data-error="Informação incorreta.">
+							<div class="help-block with-errors"></div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="form_lastname">Telefone *</label>
+							<input id="form_lastname" type="text" name="phone" class="form-control" placeholder="Por favor insira seu telefone *" required="required" data-error="Informação incorreta.">
+							<div class="help-block with-errors"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="form_email">Email *</label> 
+							<input id="form_email" type="email" name="email" class="form-control" placeholder="Por favor insira seu e-mail *" required="required" data-error="Informação incorreta.">
+							<div class="help-block with-errors"></div>
+						</div>
+					</div>
+					
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="form_need">Escolha um assunto *</label>
+							<select id="form_need" name="need" class="form-control" required="required" data-error="Informação incorreta.">
+								<option value=""></option>
+								<option value="Request quotation">Solicitar Orçamento</option>
+								<option value="Request order status">Retirada de Dúvida</option>
+								<option value="Other">Outros</option>
+							</select>
+							<div class="help-block with-errors"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label for="form_message">Mensagem *</label>
+							<textarea id="form_message" name="message" class="form-control" placeholder="Mensagem*" rows="4" required="required" data-error="Informação incorreta."></textarea>
+							<div class="help-block with-errors"></div>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<input type="submit" class="btn btn-success btn-send" value="Enviar a Mensagem">
+					</div>
+				</div>
+			</div>
 
-        <hr>
+		</form>
+	</div>
 
-        <h6>Ainda está com dúvidas ?</h6>
-            <p>Estamos prontos para te ajudar!<br>
-            Entre em contato com a nossa equipe:<br>
-            <b>Whatsapp:</b><br>
-            <b>E-mail:</b><br>
-            <b>Telefone:</b><br>
-            Horario de atendimento de segunda a sexta das 8:00 às 18:00<br>
-            </p>
-
-        </ol>
-
-        <img src="./img/assosifaq.png" class="rounded  mx-auto d-block">
-        <button type="button" class="btn btn-danger m-4 btn-lg btn-block" onclick="window.location.href='./faq.html'"">Clique para tirar mais dúvidas</button>
-
-    </section>
-
-    <!--Content Section End-->
+    <!--Form Section End-->
     
     <!--Footer Section Start-->
 	<section class="footer-section">
