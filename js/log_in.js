@@ -3,7 +3,7 @@ function log_in() {
     var pas = document.getElementById("password");
 
     if (log.value == "admin@admin.com" && pas.value == "admin") {
-        window.location.replace("http://pt.stackoverflow.com");
+        window.location.replace("painelassoci/index.html");
     }
     else {
         window.alert("O usuário ou senha está incorreto.");
